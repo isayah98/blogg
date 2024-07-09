@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Preview</title>
+    <style>
+      .jumbotron-custom {
+        background-color: #f8f9fa;
+        padding: 2rem 1rem;
+        border-radius: 0.3rem;
+        margin-bottom: 2rem;
+      }
+      .card-title-overlay {
+        color: white; 
+        background-color: rgba(0, 0, 0, 0.6); 
+        text-align: center;
+        padding: 0.5rem;
+      }
+      .button-custom {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+      }
+      .button-custom:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron jumbotron-custom">
+        <h1 class="display-4">Nature Pic</h1>      
+        <p class="lead">You are now reviewing a beautiful picture.</p>
+      </div>      
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card img-fluid" style="width: 100%;">
+            <img class="card-img-top" src="./myImages/field-6574455_640.jpg" alt="Card image" style="width: 100%;">
+            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+              <h4 class="card-title card-title-overlay">Isayah Tsela</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="p-3 border bg-light">
+            <p>This is nature as you can see. We all love nature; just picture yourself being there and having a peaceful mind. It sounds perfect, doesn't it?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="container mt-5">
+      <h1>Blogging</h1>
+      <p>This is what people love to do in most cases.</p>
+      <blockquote class="blockquote">
+        <p>Many people love watching pictures of nature or animals.</p>
+        <footer class="blockquote-footer">From Isayah Tsela</footer>
+      </blockquote>
+      <button class="button-custom" onclick="location.href='index.html'">Go Back</button>
+    </div>
+    
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
