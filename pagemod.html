@@ -6,17 +6,34 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <title>Preview</title>
     <style>
-      .jumbotron-custom {
+      body {
+        font-family: 'Arial', sans-serif;
         background-color: #f8f9fa;
+      }
+      .jumbotron-custom {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: white;
         padding: 2rem 1rem;
         border-radius: 0.3rem;
         margin-bottom: 2rem;
+        text-align: center;
+      }
+      .card-custom {
+        overflow: hidden;
+        border-radius: 0.3rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
       .card-title-overlay {
-        color: white; 
-        background-color: rgba(0, 0, 0, 0.6); 
-        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
         padding: 0.5rem;
+        border-radius: 0.3rem;
+      }
+      .content-section {
+        padding: 2rem;
+        background-color: white;
+        border-radius: 0.3rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
       }
       .button-custom {
         background-color: #007bff;
@@ -24,9 +41,16 @@
         border: none;
         padding: 0.5rem 1rem;
         border-radius: 0.3rem;
+        transition: background-color 0.3s;
       }
       .button-custom:hover {
         background-color: #0056b3;
+      }
+      .blockquote-custom {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-left: 0.25rem solid #007bff;
+        margin: 2rem 0;
       }
     </style>
   </head>
@@ -41,15 +65,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mb-3">
-          <div class="card img-fluid" style="width: 100%;">
-            <img class="card-img-top" src="./myImages/field-6574455_640.jpg" alt="Card image" style="width: 100%;">
+          <div class="card card-custom">
+            <img class="card-img-top" src="./myImages/field-6574455_640.jpg" alt="Nature image">
             <div class="card-img-overlay d-flex align-items-center justify-content-center">
-              <h4 class="card-title card-title-overlay">Isayah Tsela</h4>
+              <h4 class="card-title card-title-overlay text-white">Isayah Tsela</h4>
             </div>
           </div>
         </div>
         <div class="col-md-6 mb-3">
-          <div class="p-3 border bg-light">
+          <div class="content-section">
             <p>This is nature as you can see. We all love nature; just picture yourself being there and having a peaceful mind. It sounds perfect, doesn't it?</p>
           </div>
         </div>
@@ -59,10 +83,10 @@
     <div class="container mt-5">
       <h1>Blogging</h1>
       <p>This is what people love to do in most cases.</p>
-      <blockquote class="blockquote">
-        <p>Many people love watching pictures of nature or animals.</p>
+      <div class="blockquote blockquote-custom">
+        <p class="mb-0">Many people love watching pictures of nature or animals.</p>
         <footer class="blockquote-footer">From Isayah Tsela</footer>
-      </blockquote>
+      </div>
       <button class="button-custom" onclick="location.href='index.html'">Go Back</button>
     </div>
     
@@ -70,4 +94,3 @@
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
   </body>
-</html>
